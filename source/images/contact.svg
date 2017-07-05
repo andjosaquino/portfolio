@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="72px" height="72px" viewBox="0 0 72 72" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.1 (43504) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="09-Baseline" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard">
+            <g id="Page-1">
+                <path d="M36,0 C16.118,0 0,16.118 0,36 C0,55.882 16.118,72 36,72 C55.882,72 72,55.882 72,36 C72,16.118 55.882,0 36,0 M36,2 C54.748,2 70,17.252 70,36 C70,54.748 54.748,70 36,70 C17.252,70 2,54.748 2,36 C2,17.252 17.252,2 36,2" id="Fill-1" fill="#231F20"></path>
+                <polyline id="Stroke-3" stroke="#010202" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="28.1011 36 31.7101 36 33.6251 36 35.6951 36 35.7411 36"></polyline>
+                <path d="M42.813,39.9648 L42.896,39.9648" id="Stroke-5" stroke="#010202" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M29.104,39.9648 L39.734,39.9648" id="Stroke-7" stroke="#010202" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M39.7222,36 L43.8992,36" id="Stroke-9" stroke="#010202" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M35.7339,31.9932 L42.8959,31.9932" id="Stroke-11" stroke="#010202" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M29.104,31.9932 L31.734,31.9932" id="Stroke-13" stroke="#010202" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M36,18.0015 C26.06,18.0015 18.001,26.0595 18.001,36.0005 C18.001,39.4545 18.992,42.6695 20.679,45.4105 L18.392,49.5185 L18.401,49.5285 C18.154,49.9645 18.001,50.4605 18.001,50.9985 C18.001,52.6555 19.345,53.9985 21.001,53.9985 C21.593,53.9985 22.141,53.8215 22.605,53.5255 L22.608,53.5285 L22.663,53.4945 C22.67,53.4895 22.678,53.4855 22.685,53.4805 L26.382,51.1945 C29.167,52.9605 32.459,53.9985 36,53.9985 C45.94,53.9985 53.999,45.9405 53.999,36.0005 C53.999,26.0595 45.94,18.0015 36,18.0015 M36,20.0015 C44.821,20.0015 51.999,27.1785 51.999,36.0005 C51.999,44.8215 44.821,51.9985 36,51.9985 C32.979,51.9985 30.024,51.1365 27.454,49.5055 L26.396,48.8345 L25.33,49.4935 L22.857,51.0225 L22.84,51.0065 L21.532,51.8385 C21.365,51.9445 21.187,51.9985 21.001,51.9985 C20.45,51.9985 20.001,51.5495 20.001,50.9985 C20.001,50.8385 20.047,50.6805 20.142,50.5145 L20.901,49.1465 L20.893,49.1375 L22.426,46.3835 L22.997,45.3595 L22.382,44.3625 C20.825,41.8325 20.001,38.9405 20.001,36.0005 C20.001,27.1785 27.179,20.0015 36,20.0015" id="Fill-15" fill="#231F20"></path>
+            </g>
+            <rect id="Rectangle" x="16" y="16" width="72" height="72"></rect>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{ site.description }}">
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="stylesheet" href="{% asset_path application.css %}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.js"></script>
+  </head>
+  <body>
+    <div class='Header col-12-12'>
+      <div class='col-2-12'>
+        <div class='Page-type u-pt3'>
+          <p class='small'>
+            {{page.type}}
+            <br>
+            Last Updated {{page.date}}
+          </p>
+        </div>
+      </div>
+      <div class='col-9-12'>
+        <div class='col-9-9'>
+          <h1>
+            {{page.title}}
+          </h1>
+          <hr>
+        </div>
+        <div class='col-9-9'>
+          <h5 class='sans-serif bold statement'>
+            {{page.description}}
+          </h5>
+          <hr>
+          <div class='col-3-9'>
+            <p class='bold'>
+              Category
+            </p>
+          </div>
+          <div class='col-6-9'>
+            <p>
+              Product Design
+              <br>
+              Visual Design
+              <br>
+              Prototyping
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='col-12-12'>
+      <div class='col-9-12-s2'>
+        <div class='col-9-9'>
+          <hr>
+          <div class='col-3-9'>
+            <p class='bold'>
+              What
+            </p>
+          </div>
+          <div class='col-6-9'>
+            <p>
+              A “Year in Review” of Opera’s innovations in 2016.
+            </p>
+          </div>
+        </div>
+        <div class='col-9-9'>
+          <div class='col-3-9'>
+            <p class='bold'>
+              How
+            </p>
+          </div>
+          <div class='col-6-9'>
+            <p>
+              Developing a short animated clip that visually sums up our beginning of year goal, features delivered, and overall achievements Opera for Computers achieved in 2016.
+            </p>
+          </div>
+        </div>
+        <div class='col-9-9'>
+          <div class='col-3-9'>
+            <p class='bold'>
+              Why
+            </p>
+          </div>
+          <div class='col-6-9'>
+            <p>
+              To inform our fans and followers what we have been up to in 2016 and that we are always worth keeping an eye on. In addition, to remind our teams internally what mission we set out with in 2016, the ways we delivered on it and our overall achievements.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    {{content}}
+
+    <script type="text/javascript" src="{% asset_path application.js %}"></script>
+  </body>
+</html>

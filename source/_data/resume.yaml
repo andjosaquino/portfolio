@@ -1,0 +1,38 @@
+- category: Education 
+  roles:
+    - role: B.S. Computer Science
+      company: Cornell University
+      location: Ithaca, NY
+      items:
+        - time: Sep 2013 - May 2017
+          item: Data-Driven Web Applications, Object-Oriented Programming, Functional Programming, Consumer Behavior, Social Psychology, Design for Social Impact, Advanced Game Design, Natural Language Processing, Algorithms, Educational Tech
+- category: Projects
+  roles:
+    - role: Design Lead
+      company: Aphelion 
+      location: Ithaca, NY
+      items:
+        time: Jan 2016 - Aug 2016
+        item: Designed a puzzle iOS game for a game design class. Contributed product direction and artwork. The game was accepted into Boston Festival of Indie Games 2016.
+- category: Work 
+  roles:
+    - role: Product Designer
+      company: Facebook
+      location: Menlo Park, CA
+      items:
+        - time: Jun 2016 - Aug 2016
+          item: Designed for News Feed. Developed Design Resources website.
+    - role: Product Designer
+      company: BuzzFeed
+      location: New York, NY
+      items:
+        - time: Dec 2015 - Jan 2016
+          item: Designed for News Feed. Developed Design Resources website.
+        - time: Jun 2016 - Aug 2016
+          item: Designed and developed (AngularJS, HTML, CSS) a custom report generator and a builder for a custom feed format.
+    - role: Marketing Director
+      company: Student Agencies
+      location: Ithaca, NY
+      items:
+        - time: Jan 2016 to Dec 2017
+          item: Managed art direction for 7 student-run companies. Designed a style guide and facilitated data-driven marketing plans.

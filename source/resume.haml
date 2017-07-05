@@ -1,0 +1,45 @@
+---
+layout: default
+---
+{% include navigation.haml %}
+
+%div.Header.col-12-12
+  %div.col-2-12
+    %div.Page-type.u-pt3
+      %p.small
+        Last Updated Dec 23, 2016
+  %div.col-9-12
+    %div.col-9-9
+      %h3
+        Resume
+
+{% for category in site.data.resume %}
+%div.col-12-12
+  %div.col-9-12-s2
+    %div.col-9-9
+      %hr
+      %div.col-1-9
+        %p.bold
+          {{category.category}}
+      %div.col-8-9
+        {% for role in category.roles %}
+        %div.col-8-8.u-mb2
+          %div.col-8-8
+            %div.col-6-8-s2
+              %h5.serif
+                {{role.role}}
+              %h6.u-regular.dark-gray
+                {{role.company}} · {{role.location}}
+          {% for roleItem in role.items%}
+          %div.col-8-8
+            %div.col-2-8
+              %p.small.gray
+                {{roleItem.time}}
+            %div.col-6-8
+              %p
+                {{roleItem.item}}
+          {% endfor %}
+        {% endfor %}
+{% endfor %}
+
+{% include footer.haml %}

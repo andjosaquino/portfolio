@@ -1,11 +1,110 @@
 ---
 layout: default
 ---
+{% include navigation.haml %}
+%div.Header
+  %div.Header-landing
+    %div.Header-picture
+    %div.Header-intro
+      %h1.black.bold
+        Andrew is a designer living in <span class='s'><span class='gray'>New York</span></span> San Francisco and an advocate for better independent education.
+  %div.Header-details
+    %div.Header-desc
+      %div.Header-desc-container
+        %p.black.sans-serif
+          Currently hunting for videos of long noodle dogs and helping build a better News Feed at <a href: "http://facebook.design/" class="black">Facebook</a>.
+    %div.Header-roles
+      %p.small.black.sans-serif
+        Product Design Intern
+        %br
+          %span.dark-gray
+            Summer 2016 · <a href: "http://facebook.design/" class="dark-gray">Facebook</a>
+      %p.small.black.sans-serif
+        Product Design Intern
+        %br
+          %span.dark-gray
+            Summer 2015, Winter 2015 · <a href: "https://medium.com/buzzfeed-design" class="dark-gray">BuzzFeed</a>
+      %p.small.black.sans-serif
+        B.S. Computer Science
+        %br
+          %span.dark-gray Cornell University
+    %div.Header-roles
+      %p.small.black.sans-serif
+        Instructor
+        %br
+          %span.dark-gray  Intro to Digital Product Design at Cornell University
+      %p.small.black.sans-serif
+        Design Manager
+        %br
+          %span.dark-gray CUAppDev Project Team at Cornell University
 
-.delete-me
-  .container
-    %h1 Proteus
-    %p
-      You're all set!
-      <a href="http://github.com/thoughtbot/proteus-jekyll">Let's get started</a>
-      building your prototype.
+%div.ActionBar
+  %div.ActionBar-actions
+    %a.ActionBar-mediumLink{href:"https://medium.com/@andrewaquino"}
+      %span.ActionBar-icon.ActionBar-mediumIcon
+      %div.ActionBar-mediumLabel
+        %p 
+          Read my writing
+        %p.small.dark-gray
+          Medium
+    %a.ActionBar-instagramLink{href:"https://www.instagram.com/andjosaquino/"}
+      %span.ActionBar-icon.ActionBar-instagramIcon
+      %div.ActionBar-instagramLabel
+        %p
+          Peak into my life
+        %p.small.dark-gray
+          Instagram
+    %a.ActionBar-messengerLink{href:"m.me/andjosaquino"}
+      %span.ActionBar-icon.ActionBar-messengerIcon
+      %div.ActionBar-messengerLabel
+        %p
+          Get in touch
+        %p.small.dark-gray
+          Messenger
+
+%section
+  %div.WritingScroll
+    %div.WritingScroll-cell
+      %div.WritingScroll-meta
+      %div.WritingScroll-title
+      %div.WritingScroll-desc
+%section#trigger
+  {% for post in site.posts %}
+  %section{:id => "trigger{{post.number}}"}
+    %div.Cell
+      %div.Cell-container
+        %div.Cell-content
+          %div.Cell-tag
+            %p.small {{ post.type }}
+            %p.caption.dark-gray.small
+              {{ post.date | date: "%-d %B %Y" }} · Product Design, Prototyping, Visual Design 
+          %div.Cell-metaData
+            {% if post.type == "Notice" %}
+            %div.Notice
+              %p.Notice-label.dark-gray.sans-serif
+                {{post.title}}
+              %p.small
+                %span.Tag
+                  Mobile UI
+                %span.Tag
+                  Web UI
+                %span.Tag
+                  User Experience
+                %span.Tag
+                  Logo Design
+                %span.Tag
+                  Graphic Design
+              %button{type: "button"}
+                Let's work together
+            {% else %}
+            %div.Article
+              %h5.black.bold
+                {{post.title}}
+              %p.Notice-label.dark-gray.sans-serif
+                {{post.description}}
+            {% endif %}
+        {% if post.type != "Notice" %}
+        %div.cell-photo
+        {% endif %}
+    {% endfor %}
+{% include footer.haml %}

@@ -7,45 +7,14 @@ body {
   line-height: $base-line-height;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: $heading-font-family;
-  font-size: $base-font-size;
-  line-height: $heading-line-height;
-  margin: 0 0 $small-spacing;
-}
-
-p {
-  margin: 0 0 $small-spacing;
-}
-
-a {
-  color: $action-color;
-  text-decoration: none;
-  transition: color 0.1s linear;
-
-  &:active,
-  &:focus,
-  &:hover {
-    color: darken($action-color, 15%);
-  }
-
-  &:active,
-  &:focus {
-    outline: none;
-  }
-}
-
 hr {
   border-bottom: $base-border;
   border-left: none;
   border-right: none;
   border-top: none;
-  margin: $base-spacing 0;
+  padding-top: 48px;
+  margin-bottom: 47px;
+  margin-top:0;
 }
 
 img,
@@ -53,3 +22,190 @@ picture {
   margin: 0;
   max-width: 100%;
 }
+
+h1{
+  font-size:52px;
+  line-height:72px;
+  font-family: $serif;
+  font-weight:700;
+  padding-top:10px;
+  color: $black;
+  margin: 0 0 6px -2px ;
+}
+
+h2{
+  font-size:56px;
+  line-height:80px;
+  font-family:$serif;
+  font-weight:400;
+  padding-top:6px;
+  color: $black;
+  margin: 0 0 10px -2px;
+}
+
+h3{
+  font-size:52px;
+  line-height:72px;
+  font-family:$serif;
+  font-weight:400;
+  padding-top:11px;
+  color: $black;
+  margin: 0 0 1px -2px;
+}
+
+h4{
+  font-size:34px;
+  line-height:48px;
+  font-family:$serif;
+  font-weight:400;
+  padding-top: 12px;
+  color: $black;
+  margin: 0 0 4px -1px;
+}
+
+h5{
+  font-size:33px;
+  line-height:48px;
+  font-family:$sans-serif;
+  font-weight:800;
+  padding-top:0px;
+  color: $black;
+  margin: -4px 0 4px -1px;
+}
+
+h6{
+  font-size:21px;
+  line-height:32px;
+  font-family:$sans-serif;
+  font-weight:700; 
+  padding-top:9px;
+  color: $black;
+  margin: 0 0 -9px -1px;
+}
+
+.statement{
+  margin-bottom: 7px;
+}
+
+p{
+  font-size: 22px;
+  line-height:32px;
+  font-family:$sans-serif;
+  padding-top:8px;
+  color: $black;
+  margin: 0 0 16px 0;
+}
+
+.small{
+  font-size: 16px;
+  line-height:24px;
+  font-family:$sans-serif;
+  padding-top:6px;
+  margin-bottom:10px;
+}
+p.caption{
+  margin: 0 0 11px 0;
+}
+
+p + p.caption{
+  margin-top: -1rem;
+}
+
+a {
+  color: $linkColour;
+  text-decoration: none;
+  transition: color .1s, background-color .1s;
+
+  &:hover, &:active, &:focus {
+    color: $hoverColour;
+    text-decoration: none;
+  }
+}
+
+  // Nice underlines for text links.
+p a, li a, .link {
+    background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0) 50%,lighten($linkColour,20%) 50%);
+    background-position: 0 93%;
+    background-repeat: repeat-x;
+    background-size: 100% 0.15rem;
+    text-shadow: 0.1rem 0 #F7F7F7,
+                 0.15rem 0 #F7F7F7,
+                -0.1rem 0 #F7F7F7,
+                -0.15rem 0 #F7F7F7;
+
+    &:hover, &:active, &:focus {
+      background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0) 50%,lighten($hoverColour,20%) 50%);
+    }
+  }
+
+h5 a, li a {
+    background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0) 50%,lighten($linkColour,20%) 50%);
+    background-position: 0 93%;
+    background-repeat: repeat-x;
+    background-size: 100% 0.48rem;
+    text-shadow: 0.1rem 0 #F7F7F7,
+                 0.15rem 0 #F7F7F7,
+                -0.1rem 0 #F7F7F7,
+                -0.15rem 0 #F7F7F7;
+
+    &:hover, &:active, &:focus {
+      background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0) 50%,lighten($hoverColour,20%) 50%);
+    }
+  }
+ol{
+  font-size: 18px;
+  line-height:32px;
+  font-family:$sans-serif;
+  padding-top:9px;
+  margin-bottom:24px;
+  color: $black;
+}
+
+
+// Lists.
+ul, ol {
+  li {
+    font-feature-settings: 'kern', 'onum', 'liga';
+    ol, ul {
+      padding-top: 1rem;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+// Ordered lists.
+ol {
+  list-style-type: decimal;
+  li {
+    counter-increment: top-level;
+    &:before {
+      font-feature-settings: 'lnum', 'tnum';
+      margin-left: -3rem;
+      position: absolute;
+      text-align: right;
+      width: 2em;
+    }
+    ul {
+      li {
+        ol {
+          li {
+            counter-increment: alt-level;
+          }
+        }
+      }
+    }
+
+    ol {
+      li {
+        counter-increment: sub-level;
+        ol {
+          li {
+            counter-increment: sub-sub-level;
+          }
+        }
+      }
+    }
+  }
+}
+
+

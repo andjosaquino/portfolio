@@ -2,6 +2,7 @@ gems:
   - bourbon
   - neat
   - octopress-autoprefixer
+  - jekyll-assets
 
 # Structure configuration
 source: source
@@ -9,6 +10,14 @@ destination: build
 
 assets:
   cachebust: soft
+  sources:
+    - _assets/css
+    - _assets/images
+    - _assets/javascripts
+    - _assets/stylesheets
+    - _assets/fonts
+    - _assets/img
+    - _assets/js
 
 # Site settings
 title: Jekyll Starter
@@ -19,3 +28,6 @@ baseurl: /proteus-jekyll
 
 # Build settings
 markdown: kramdown
+
+twitter_username: jekyllrb
+github_username:  jekyll

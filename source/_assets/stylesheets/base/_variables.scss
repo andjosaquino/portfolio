@@ -1,6 +1,8 @@
 // Typography
 $base-font-family: $helvetica;
 $heading-font-family: $base-font-family;
+$sans-serif: Circular std, Karla, sans-serif;
+$serif: Libre Baskerville, serif;
 
 // Font Sizes
 $base-font-size: 1em;
@@ -17,19 +19,72 @@ $base-z-index: 0;
 
 // Colors
 $blue: #477dca;
-$dark-gray: #333;
 $medium-gray: #999;
-$light-gray: #ddd;
+$white: rgba(247,247,247,1);
+$black: #000000;
+$dark-gray: #737577;
+$gray: #9EA2A7;
+$light-gray: #E2E2E2;
+$lightest-gray: #EFEFEF;
+
+$linkColour: $black !default;
+$hoverColour: #0B348B !default;
 
 // Font Colors
 $base-background-color: #fff;
-$base-font-color: $dark-gray;
+$base-font-color: #2D313B;
 $action-color: $blue;
 
 // Border
-$base-border-color: $light-gray;
-$base-border: 1px solid $base-border-color;
+$base-border-color: $dark-gray;
+$base-border: 1px dotted $base-border-color;
 
 // Forms
 $form-box-shadow: inset 0 1px 3px rgba(#000, 0.06);
 $form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $lightness: -5%, $alpha: -0.3);
+
+.bold{
+  font-weight:700;
+}
+
+.underline{
+  
+}
+
+.regular{
+  font-weight: 400;
+}
+
+.black{
+  color:$black;
+}
+
+.dark-gray{
+  color:$dark-gray;
+}
+.dark-gray--link{
+  color:$dark-gray !important;
+}
+
+.gray{
+  color:$gray;
+}
+
+.light-gray{
+  color:$light-gray;
+}
+
+.u-align-right{
+  text-align:right;
+  float:right;
+}
+
+.u-mb0{
+  margin-bottom:0;
+}
+
+.s{
+    text-decoration: line-through;
+    color: $dark-gray;
+}
+
